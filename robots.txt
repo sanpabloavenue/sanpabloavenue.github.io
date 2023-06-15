@@ -1,0 +1,14 @@
+User-agent: *
+Disallow: /css/
+Disallow: /js/
+Disallow: /404.html
+Disallow: /license.txt
+Disallow: /.editorconfig
+Disallow: /.gitattributes
+Disallow: /.gitignore
+Disallow: /.htaccess
+Disallow: /404.html
+Disallow: /apple-touch-icon.png
+Disallow: /browserconfig.xml
+Disallow: /crossdomain.xml
+

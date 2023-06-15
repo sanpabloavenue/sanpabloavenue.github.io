@@ -1,0 +1,316 @@
+/* Global */
+html  {
+	color: #3b7abe;
+	background-color: #000000;
+	
+	font-size: 1.0em; /* currently ems causes chrome bug misinterpreting rems on body element */
+	font-weight: 400;
+
+	font-family: serif;
+	cursor: default;
+    font-size: 100%;
+}
+
+::-webkit-scrollbar-track {
+	background-color: #170217;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.9);
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+	background-color: #101010;
+	width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #fdf5e6;
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.9);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+a {
+	color: #fdf5e6;
+}
+
+a:hover {
+	color: #ff5722;
+	text-decoration: overline;
+}
+
+h1 {
+	padding-top: 40px;
+	font-size: 1.7em;
+	font-weight: 400;
+}
+
+h2 {
+	font-size: 1.6em;
+	font-weight: 400;
+}
+
+h3 {
+	font-size: 1.5em;
+	font-weight: 400;
+}
+
+h4, h5, h6 {
+	font-size: 1.4em;
+	font-weight: 300;
+}
+
+.content ul {
+    list-style-type: none; /* Remove list bullets */
+    padding-left: 20px;
+}
+
+.content li { 
+    padding-left: 5px;
+	text-indent: -20px;	
+}
+.content li:before {
+    content: "\2731"; /* Insert alternative bullets */
+    padding-right: 3px;
+}
+
+/* Common header settings */
+a:hover .header_logo .header_logo_1,
+a:hover .header_logo .header_logo_2,
+a:hover .header_menu {
+	color: #ffffff;
+}
+
+.header_logo .header_logo_1 {
+	color: rgb(255, 255, 255);
+}
+
+.header_logo .header_logo_2 {
+	color: #ffffff;
+	color: #ffffff;
+}
+/* END Common header settings */
+
+.header_large {
+	min-height: 80px;
+}
+
+.header_large a {
+	text-decoration: none;
+}
+
+.header_large .header_logo {
+	background-color: #000000;
+	float: left;
+	min-height: 80px;
+	padding: 12px 10px 0 10px;
+}
+
+.header_large .header_logo .header_logo_1 {
+	font-size: 1.7em;
+	display: block;
+}
+
+.header_large .header_logo .header_logo_2 {
+	font-size: 1em;
+}
+
+.header_large .header_title {
+	float: left;
+	font-size: 1.6em;
+	margin: 24px 5px 5px 22px;
+}
+
+.header_large .header_menu {
+	float: right;
+	font-size: 1.6em;
+	margin: 24px 10px 10px 10px;
+}
+
+.header_small {
+	display: none;
+}
+
+.lightbox {
+	background-color: rgb(0, 0, 0);
+}
+
+.explain_about_background {
+	background-color: #f9f9f9;
+}
+
+.explain_about {
+	padding: 10px;
+	font-size: 1.1em;
+	color: #2e97d8;
+	background-color: white;
+	max-width: 900px;
+	margin: auto;
+	line-height: 150%;
+}
+
+.explain_about a {
+	color: #42a3df;
+}
+
+.explain_about a:hover {
+	color: #ff5722;
+}
+
+.explain_about div.about_text_left_of_img {
+	max-width: 450px;
+	margin: 0 20px 0 0;
+	display: inline;
+	float: left;
+}
+
+
+.explain_about img.about_img_right_of_text {
+	display: inline;
+	float; right;
+}
+
+.navigation {
+	background-color: #1b2633;
+	text-align: center;
+	padding: 0 10px 30px 10px;
+}
+
+.navigation > .menu > .category_title {
+	font-size: 1.5em;
+	padding: 25px 0 5px 0;
+}
+
+.navigation > .menu .page_title {
+	white-space: nowrap;
+	font-size: 1.2em;
+	padding: 4px;
+	margin: 0 6px 0 6px;
+	line-height: 1.8em;
+}
+
+.footer {
+	padding: 10px;
+	left: 8px;
+	right: 8px;
+	font-size: 0.9em;
+	color: #aaaaaa;
+	text-align: center;
+}
+
+.footer a > img {
+	border: 1px solid #aaaaaa;
+	margin-bottom: 5px;
+}
+
+.footer a > img:hover {
+	border: 1px solid #ff5722;
+}
+
+@media all and (max-width: 768px) {
+	.header_large {
+		display: none;
+	}
+
+	.header_small {
+		display: block;
+		min-height: 60px;
+	}
+
+	.header_small .header_top {
+		background-color: #000000;
+		width: 100%;
+		min-height: 55px;
+	}
+
+	.header_small a {
+		text-decoration: none;
+	}
+
+	.header_small .header_logo {
+		float: left;
+		padding: 12px 10px 8px 10px;
+	}
+
+	.header_small .header_logo .header_logo_1 {
+		font-size: 1.7em;
+	}
+
+	.header_small .header_logo .header_logo_2 {
+		font-size: 1.1em;
+	}
+
+	.header_small .header_title {
+		font-size: 1.7em;
+		margin: 4px 0 0 10px;
+	}
+
+	.header_small .header_menu {
+		color: rgb(255, 255, 255);
+		float: right;
+		font-size: 1.6em;
+		padding: 14px 10px 0 5px;
+	}
+
+	.navigation > .menu {
+		font-size: 90%;
+	}
+}
+
+@media all and (max-width: 600px) {
+	.header_small {
+		font-size: 80%;
+	}
+
+	.header_small .header_top {
+		min-height: 80px;
+	}
+
+	.header_small .header_logo .header_logo_1 {
+		display: block;
+	}
+	.header_small .header_logo .header_logo_2 {
+		font-size: 1.2em;
+	}
+}
+
+.explain {
+	padding: 0 10px 0 15px;
+	font-size: 1.1em;
+	color:#a38244;
+}
+
+
+/* Lightbox modifications */
+.sl-overlay {
+  background: black;
+  opacity: 0.9;
+}
+
+.sl-wrapper {
+  background: black;
+  color: white;
+}
+
+.sl-wrapper button {
+  color: white;
+  font-size: 60px;
+}
+
+.sl-wrapper .sl-navigation button {
+  height: 200px;
+  width: 200px;
+}
+
+.justified-gallery > a > .caption,
+.justified-gallery > div > .caption {
+	font-size:16px;
+	font-family: serif;
+}
