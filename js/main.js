@@ -12,7 +12,7 @@ $(document).ready(function(){
 		captionSettings	: { animationDuration: 500, visibleOpacity: (isNaN(window.globals.defaultHideCaption) ? 0.6 : 0.0), nonVisibleOpacity: (isNaN(window.globals.defaultHideCaption) ? 0.0 : 0.6) },
 		rowHeight       : (isNaN(window.globals.justifiedGalleryRowHeight) ? 200 : window.globals.justifiedGalleryRowHeight),
 		justifyThreshold: 0.55,
-		margins	        : 3,
+		margins	        : 4,
 		rel             : 'gallery1',
 		fixedheight		: true
 	}).on('jg.complete', function() {
